@@ -13,8 +13,6 @@ app.get('/',(req,res)=>{
 app.post('/',(req,res)=>{
     
     const {name,name2,message}=req.body;
-
-    //console.log(body);
     res.status(200).send({msg:`${name} ${message} ${name2} very very much`});
 } )
 
